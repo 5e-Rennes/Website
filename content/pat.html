@@ -8,6 +8,9 @@
         <meta name="author" content="JERI">
         <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="img/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="../js/script.js"></script>
     </head>
     
     <body>
@@ -18,11 +21,14 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html" id="test"><img src="../img/accueil.svg" alt=""></a></li>
-                <li><a href="troupe.html">La Troupe</a></li>
-                <li><a href="pat.html">Les Patrouilles</a></li>
-                <li><a href="maitrise.html">La Maitrise</a></li>
-                <li style="float:right"><a href="contact.html">Contact</a></li>
+                <li><a href="../index.html"><img src="../img/accueil.svg" alt=""></a></li>
+                <li class="icon" id="icon"><a class="icon" onclick="toggleMenu()"><i class="fa fa-bars"></i></a></li>
+                <div id="menu-box">
+                    <li><a href="troupe.html">La Troupe</a></li>
+                    <li><a href="pat.html">Les Patrouilles</a></li>
+                    <li><a href="maitrise.html">La Maitrise</a></li>
+                    <li style="float:right"><a href="contact.html">Contact</a></li>
+                </div>
             </ul>
         </nav>
 
