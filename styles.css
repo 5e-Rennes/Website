@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/* Général */
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    overflow-x:hidden;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFC800;
+}
+  
+li {
+    float: left;
+    height: 57.5px;
+}
+  
+li a {
+    height: 57.5px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: white;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Bannière */
+#ban_img {
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+    background-image: url(https://5e-rennes.github.io/Website/img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#banner:hover  #ban_img {
+    filter: none;
+}
+
+#banner:hover  #ban_txt {
+    opacity: 0;
+}
+
+#ban_txt {
+    position: absolute;
+    width: 50%;
+    top: 250px;
+    margin-left: 25%;
+    margin-top: -100px;
+    transition: 0.3s;
+}
+
+h6 {
+    margin: 0;
+    color: white;
+    font-size: 500%;
+}
+
+/* Accueil */
+#pres {
+    height: 800px;
+    background-color: #CECECE;
+    margin: 2vw;
+    border-radius: 1vw;
+}
+
+#pres h1 {
+    padding-top: 2vw;
+}
+
+#pres p {
+    text-align: justify;
+    padding: 1vw;
+}
+
+/* Patrouilles */
+.table {
+    margin: 2vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2vh 2vh; 
+    grid-template-areas: 
+      "al ap"
+      "co fr"; 
+}
+
+#al, #ap, #co, #fr {
+    background-color: #CECECE;
+    border-radius: 1vw;
+}
+
+/* Troupe */
+#trp_content {
+    display: inline-block;
+    margin-bottom: 2vw;
+}
+
+#trp_info, #trp_photo {
+    width: 45vw;
+    margin-top: 2vw;
+    margin-left: auto;
+    background-color: #CECECE;
+    border-radius: 1vw;
+}
+
+#trp_info {
+    float: left;
+    margin-right: 2vw;
+}
+
+#trp_info p {
+    text-align: justify;
+    padding: 1vw;
+}
+
+#trp_photo {
+    float: right;
+}
+
+#p1 {
+    transform: scale(0.9);
+}
+
+/* Maitrise */
+.button {
+    margin: 2vh;
+    background-color: #CECECE;
+    border-radius: 1vw;
+    height: 50vh;
+    padding: 2vh;
+}
+
+.button p {
+    text-align: justify;
+    padding: 1vw;
+}
+
+button {
+    border: none;
+    background-color: #29339B;
+    color: white;
+    border-radius: 0.5vw;
+    width: 600px;
+    height: 50px;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 2vh;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #607416;
+}
+
+/* Contact */
+#form {
+    background-color: #CECECE;
+    margin: 1vw;
+    border-radius: 1vw;
+    height: 100vh;
+}
+
+#form h1 {
+    padding: 2vw;
+}
+
+#form label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#radio_group {
+    width: 50%;
+}
+
+#radio_group label {
+    float: right;
+}
+
+#form_content {
+    width: 50%;
+    margin-left: 25%;
+}
+
+/* Pieds de page */
+footer {
+    background-color: #FFC800;
+    margin-top: 3vh;
+    bottom: 0;
+    height: fit-content;
+}
+
+footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+}
+  
+@media (min-width: 500px) {
+    footer ul {
+      grid-auto-flow: column;
+    }
+}
+  
+footer a {
+    color: black;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+  
+footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+  
+footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+  
+footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+}
