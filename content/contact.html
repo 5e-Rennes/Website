@@ -33,19 +33,19 @@
         </nav>
 
         <div id="form">
-            <form action="">
-                <h1>Formulaire de Contact</h1>
+            <form action="../php/mail.php" method="POST">
+                <h1>Formulaire de Contact (inactif pour le moment 😇 )</h1>
                 <div id="form_content">
                     <div id="name">
-                        <label>NOM et Prénom : <input type="text" placeholder="DE BERGERAC Cyrano" required></label>
+                        <label>NOM et Prénom : <input type="text" placeholder="DE BERGERAC Cyrano" required name="name"></label>
                     </div>
                     <br>
                     <div id="email">
-                        <label>Votre Email : <input type="email" placeholder="cyrano@mail.com" required></label>
+                        <label>Votre Email : <input type="email" placeholder="cyrano@mail.com" required name="email"></label>
                     </div>
                     <br>
                     <div id="email">
-                        <label>Votre numéro de Téléphone : <input type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="01 23 45 67 89" required></label>
+                        <label>Votre numéro de Téléphone : <input name="tel" type="tel" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="01 23 45 67 89" required></label>
                     </div>
                     <br>
                     <div id="choix">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <br>
-                <input type="submit" value="Envoyer">
+                <input type="submit" name="submit" value="Envoyer">
             </form>
         </div>
 
